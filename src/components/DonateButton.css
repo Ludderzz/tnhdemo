@@ -1,0 +1,19 @@
+.donate-button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 2rem;
+  background: var(--color-accent-secondary);
+  color: var(--color-button-text);
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2000;
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donate-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px var(--color-card-shadow);
+}

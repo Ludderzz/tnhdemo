@@ -1,0 +1,18 @@
+.darkmode-toggle {
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  background: var(--color-section-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-card-shadow);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 2000;
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+  transition: 0.3s;
+}
+
+.darkmode-toggle:hover {
+  transform: scale(1.05);
+}

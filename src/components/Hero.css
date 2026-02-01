@@ -1,0 +1,94 @@
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero-buttons {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+  background: var(--color-accent-primary);
+  color: var(--color-button-text);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+}
+
+.btn-secondary {
+  background: var(--color-accent-secondary);
+  color: var(--color-button-text);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+  .btn-primary, .btn-secondary { padding: 0.6rem 1.5rem; font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .hero { height: 80vh; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero-buttons { flex-direction: column; gap: 0.8rem; }
+}

@@ -1,0 +1,35 @@
+.mailin {
+  padding: 4rem 2rem;
+  background: var(--color-section-bg);
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+}
+
+.mailin h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent-primary);
+}
+
+.mailin p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.mailin .btn-primary {
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-accent-primary);
+  color: var(--color-button-text);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mailin .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px var(--color-card-shadow);
+}
